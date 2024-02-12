@@ -10,6 +10,7 @@ import UserEdit from './UserEdit';
 import NotFound from './NotFound';
 import Main from "./Main";
 import LoginSuccess from "./LoginSuccess";
+import GroupChat from "./GroupChat";
 
 export default class AppRouter extends React.Component {
     render() {
@@ -23,9 +24,10 @@ export default class AppRouter extends React.Component {
                             <Route path="register" element={<Register />} />
                             <Route path="registersuccess" element={<RegisterSuccess />} />
                             <Route path="loginsucess" element={<LoginSuccess />} />
-                            <Route path="logout" element={<Logout/>}/>
+                            <Route path="logout" element={<Logout />} />
                             <Route path="userlist" element={<UserList />} />
-                            <Route path="useredit/:id" element={<UserEdit/>} />
+                            <Route path="useredit/:id" element={<UserEdit />} />
+                            <Route path="groupchat" element={<GroupChat />} />
                             <Route path="*" element={<NotFound />} />
                         </Route>
                     </Routes>

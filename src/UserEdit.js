@@ -5,15 +5,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 export default function UserEdit() {
     const editFullNameInputRef = useRef(null);
     const { id } = useParams();
-
-    const usersArray = JSON.parse(localStorage.getItem("users"));
-    const editUser = usersArray.filter((u) => u.id == id)[0];
-
     const navigate = useNavigate();
-
     useEffect(() => {
         editFullNameInputRef.current.focus();
     });
+
+    const usersArray = JSON.parse(localStorage.getItem("users"));
+    const editUser = usersArray.filter((u) => u.id == id)[0];
 
     const handleSave = (event) => {
         event.preventDefault();

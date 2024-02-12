@@ -31,6 +31,7 @@ export default function Login() {
         const result = usersArray.filter((u) => u.email == user.email);
         if (result.length && result[0].password == user.password) {
             user.id = result[0].id;
+            user.fullName = result[0].fullName;
             localStorage.setItem("loggedinuser", JSON.stringify(user));
             navigate("/loginsucess");
         } else {

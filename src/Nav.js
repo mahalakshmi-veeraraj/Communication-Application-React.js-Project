@@ -8,7 +8,7 @@ function Nav() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{ backgroundColor: 'gray' }}>
                         <ul className="navbar-nav">
                             <li className="nav-item col-sm-10">
-                                <Link className="nav-link active border border-dark" to="/">Group Chat</Link>
+                                <Link className="nav-link active border border-dark" to="/groupchat">Group Chat</Link>
                             </li>
                             <li className="nav-item col-sm-10">
                                 <Link className="nav-link active border border-dark" to="/userlist">Manage Users</Link>
